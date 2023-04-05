@@ -1,0 +1,50 @@
+@import "../../assets/styles/helpers/variables.scss";
+
+.contact-form {
+    position: relative;
+    background-color: $core-white-color;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    color: $core-black-color;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        margin-bottom: 20px;
+    }
+
+    & label {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    & button {
+        border-radius: 4px;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    & .server-error {
+        background-color: $core-red-color;
+        color: $core-white-color;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    & .form-link {
+        position: absolute;
+        bottom: 27px;
+        right: 20px;
+        font-size: 0.8rem;
+    }
+}

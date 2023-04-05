@@ -1,0 +1,117 @@
+@import "./helpers/reset";
+@import "./helpers/fonts";
+@import "./helpers/mixins";
+@import "./helpers/typography";
+@import "./helpers/variables";
+
+body {
+    font-size: 16px;
+    color: $core-black-color;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background: linear-gradient(
+        to right,
+        $core-secondary-color,
+        $core-primary-color
+    );
+    color: $core-white-color;
+}
+
+.pd--xl {
+    padding: 100px 20px;
+}
+
+.pd--l {
+    padding: 70px 20px;
+}
+
+.pd--m {
+    padding: 50px 20px;
+}
+
+.pd--s {
+    padding: 30px 20px;
+}
+
+.pd--xs {
+    padding: 20px;
+}
+
+a {
+    color: $core-primary-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $core-secondary-color;
+}
+
+button {
+    background-color: $core-primary-color;
+    color: $core-white-color;
+    padding: 10px 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container--fullwidth {
+    max-width: 100%;
+}
+
+.container--xl {
+    max-width: $largeDesktop;
+}
+
+.container--l {
+    max-width: $mediumDesktop;
+}
+
+.container--m {
+    max-width: $desktop;
+}
+
+.container--s {
+    max-width: $tablet;
+}
+
+.container--xs {
+    max-width: $mobile;
+}
+
+.page {
+    padding: 20px;
+}
+
+.page-with-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.btn {
+    margin: 20px 0;
+
+    &--white {
+        background-color: $core-white-color;
+        color: $core-black-color;
+        border-radius: 4px;
+    }
+}
